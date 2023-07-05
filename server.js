@@ -5,7 +5,7 @@ dotenv.config({path: "./Config/config.env"})
 const app =require("./app")
 
 mongoose
-  .connect("mongodb://127.0.0.1/bagcollectionDB")
+  .connect("mongodb+srv://michaelokpoko224:michael001@cluster0.uow3ss2.mongodb.net/")
   .then(() => {
     console.log("connected to database")
   }).then(()=>{
@@ -19,4 +19,4 @@ mongoose
   })
   .catch((e) => {
     console.log(e.message)
-  })
+  }) 
